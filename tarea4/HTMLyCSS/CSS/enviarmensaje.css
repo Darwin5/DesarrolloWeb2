@@ -1,0 +1,12 @@
+.mensaje {
+	display:inline-block;
+	text-align: center;
+	background: #ccc;
+	width: 450px;
+	height: 450px;
+	position: relative;
+	top:; 
+	bottom:20px;
+	right: ;
+	left:400px ;
+}

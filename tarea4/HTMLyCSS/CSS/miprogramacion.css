@@ -1,0 +1,18 @@
+.tabla {
+	display:inline-block;
+	
+	background: #ccc;
+	width: 620px;
+	height: 250px;
+	position: relative;
+	top:; 
+	bottom:15px;
+	right: ;
+	left:350px ;
+}
+div {
+	position: relative;
+	bottom:15px;
+	right: ;
+	left:600px ;
+}

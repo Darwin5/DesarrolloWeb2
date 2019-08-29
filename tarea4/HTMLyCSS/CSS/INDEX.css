@@ -1,0 +1,68 @@
+.menu {
+width: 100%;
+list-style: none;
+background: #000;
+margin: 0;
+padding: 0;
+}
+.menu li {
+	display: inline-block;
+}
+.menu li a{
+	padding: 10px 20px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	background-color: #ccc;
+	color: #000;
+}
+div p ul {
+	height: 120px;
+	width: 200px
+	background:#ff8000;
+	display: inline-block;
+}
+body {
+	background:#565f67;
+}
+h1 {
+
+	text-align: center; 
+	text-shadow: 5px 5px 5px #aabac7;
+	font: italic large "Times New Roman"; 
+	width: 99%;
+	height: 40px;
+	background: #04111c;
+	color: #fff;
+	
+	padding:5px;
+	font-size: 1em;
+
+}
+img {
+	width: 300px;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	border: 2px solid #000;	
+}
+dl {
+	width: 600px;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	border: 2px solid #000;	
+}
+.caja {
+	position: relative;
+	top:; 
+	bottom:400px;
+	right: ;
+	left:400px ;
+
+}
