@@ -16,7 +16,7 @@
 	}
 	function figonaci()
 	{
-		$n =$_GET['numero'];
+		$n =$_POST['numero'];
 		$v=array();
 		$v[0]=0;
 		$v[1]=1;

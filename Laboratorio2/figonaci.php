@@ -1,12 +1,14 @@
 <?php 
-$n =$_GET['numero'];
-echo $n;
+
+$n =$_POST['numero'];
+
  ?>	
-<?php 
+
+ <?php 
 include("Operaciones.php");
 
 $figonaci = new operaciones();
-$figonaci->figonaci();
+$figonaci->figonaci($n);
 
 
 ?>
