@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botones de color</title>
+	<script>
+function cambia(boton){
+ 	var rb1= document.getElementById("rb1");
+ 	var rb2= document.getElementById("rb2");
+ 	if (rb1.checked == true) {
+        var color=boton.name;
+        document.getElementById("Panel").style.background=color;
+       }
+    else if (rb2.checked == true) {
+    	var color=boton.name;
+        document.getElementById("Panel").style.color=color;
+    }
+
+}
+
+</script>
+</head>
+<body>
+	<center>
+	<form>
+		<br><br>
+		<input type="button" name="red" value="ROJO " onclick="cambia(this)"><br><br>
+		<input type="button" name="yellow" value="AMARILLO" onclick="cambia(this)"><br><br>
+		<input type="button" name="green" value="VERDE" onclick="cambia(this)"><br><br>
+ 
+		<input type="Radio" id="rb1" name="colorin" value="ffffff" checked>Fondo
+		<input type="Radio" id="rb2" name="colorin" value="ffffff" checked>Primer Plano
+		
+		<div id="Panel" style="width:400px;height:100px;background:black;color:white;">
+			<h3>HOLA MUNDO</h3> 
+			<h2>SIS-256-2/2019.</h2>
+
+		</div>
+	</form>
+	</center>
+
+</body>
+</html>

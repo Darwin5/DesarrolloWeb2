@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>teclado en pantalla</title>
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script language="JavaScript" type="text/javascript">
+
+ 
+function imprm(bot) {
+var txtarea = document.getElementById('ta');
+var tecla = new Array('1','2','3','4','5','6','7','8','9','0');
+txtarea.value+=tecla[bot];
+txtarea.focus();
+return;
+}
+ 
+var capa1
+var capa2
+var ns4 = (document.layers)? true:false
+var ie4 = (document.all)? true:false
+var ns6 = (document.getElementById)? true:false
+ 
+function teclado() {
+   if (ns4) {
+     capa1 = document.c1
+     capa2 = document.c2
+  }
+ if (ie4) {
+   capa1 = c1.style
+   capa2 = c2.style
+ }
+ if (ns6) {
+   capa1 = document.getElementById('c1').style
+   capa2 = document.getElementById('c2').style
+ }
+}
+ 
+function muestra(obj) {
+if (ns4) obj.visibility = "show"
+else if (ie4) obj.visibility = "visible"
+else if (ns6) obj.visibility = "visible"
+}
+function mostrar()
+{
+    var num=parseInt(document.getElementById("ta").value);
+    console.log(num);
+    
+    
+    document.write(num);
+}
+
+</script>
+
+</head>
+<body onLoad="teclado();">
+ 
+<form method="post" action="teclado_pantalla.asp">
+<label for="txtn">Introdusca una numero</label>
+        <input type="text" name="textarea" id="ta"> <br>
+<br><br>
+<br><br>
+<input type="submit" value="MOSTRAR" onclick="mostrar()" style="width:60px; height:20px; text-align:center; font-size:10px;"/> 
+<div id="resul"></div>
+</form>
+ 
+ 
+<!-- TECLADO -->
+ 
+<input type="button" id="1" value="1" onclick="imprm(0);" />
+<input type="button" id="2" value="2" onclick="imprm(1);" />
+<input type="button" id="3" value="3" onclick="imprm(2);" />
+<input type="button" id="4" value="4" onclick="imprm(3);" />
+<input type="button" id="5" value="5" onclick="imprm(4);" />
+<input type="button" id="6" value="6" onclick="imprm(5);" />
+<input type="button" id="7" value="7" onclick="imprm(6);" />
+<input type="button" id="8" value="8" onclick="imprm(7);" />
+<input type="button" id="9" value="9" onclick="imprm(8);" />
+<input type="button" id="10" value="0" onclick="imprm(9);" />
+ 
+<!-- FIN TECLADO -->
+ 
+</body>
+</html>
